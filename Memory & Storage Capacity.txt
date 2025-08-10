@@ -1,0 +1,25 @@
+For Storage (Disk Space):
+
+df -h:
+This command displays information about disk space usage for all mounted filesystems in a human-readable format (e.g., KB, MB, GB). It shows total size, used space, available space, and mount points.
+
+lsblk:
+This command lists information about all available block devices (hard drives, SSDs, USB drives, etc.) and their partitions, including their sizes.
+
+fdisk -l:
+This command provides detailed information about disk partitioning, including the size of each disk and its partitions. (Requires root privileges for full details).
+
+ 
+For Memory (RAM):
+
+free -h:
+This command displays information about total, used, and free memory (RAM) and swap space in a human-readable format.
+
+cat /proc/meminfo:
+This command provides a comprehensive overview of memory-related information from the kernel's perspective, including total memory, free memory, available memory, and various buffer and cache statistics.
+
+grep MemTotal /proc/meminfo:
+This specifically extracts the total physical memory installed on the system from the meminfo file.
+
+dmidecode -t memory:
+This command provides detailed information about memory modules, including type, speed, and size, by reading system DMI (Desktop Management Interface) data. (Requires root privileges).

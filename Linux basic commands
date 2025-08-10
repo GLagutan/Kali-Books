@@ -1,0 +1,47 @@
+touch - creating files
+rm - remove or delete a file
+rmdir - remove or delete directory/folders
+mv - Move file (can be used to rename a file [Syntax: mv oldfilename newfilename])
+cp - Copy file
+Syntax:
+	mv filename path
+	mv filename /home/user/Directory
+	cp filename path
+	cp filename /home/user/Directory
+
+man - stands for manual
+	- Syntax: man command (i.e cd, pwd, ls, etc.)
+
+file - used to know what file type is your file
+cat - used to open or print anything inside of the file. It will give you nothing if the file is empty.
+locate -i or locate [filename] - used to find a specific file
+less - a command used to view a file in a separate window like "man" command.
+more - does the same thing as less but instead of displaying it on different window it dispays the whole thing in termal.
+
+lsb_release -a -a command-line utility in Linux used to display information about the Linux distribution, specifically related to the Linux Standard Base (LSB), -a stands for all
+
+nslookup - provides the protocol (IP addresses) of a certain domain or website
+	Syntax: nslookup www.domain_name.com
+	
+	
+sudo apt autoremove - remove or delete unnecessary applications
+
+sudo su - 
+	change user to root (admin) user
+	
+	passwd - change the password of root user
+	addusesr user_name - create a new user
+	usermod -aG sudo user_name - give security accessability
+	chsh -s /bin/bash user_name - new user with sudo priviledges
+	grep 'sudo' /etc/group - enabling priviledges for the new user
+	
+su user_name - change the user in linux
+
+Terminal Editors / Terminal Multiplexer
+	tilix
+	konsole
+	guake
+	
+chmod +x filename.run -install downloaded files in linux
+	
+	
