@@ -44,4 +44,31 @@ Terminal Editors / Terminal Multiplexer
 	
 chmod +x filename.run -install downloaded files in linux
 	
+Nmap:
+
+Note: Nmap is a noisy scanner
+
+nmap -sn [IP/range]
+	-n=No.
+	-s=Scan
+		=No Port Scan
+	-scan all networks in IP range and all live hosts open
+
+nmap -sS [IP/range]
+	-SYN scan or Stealth scan
+	-Port Scan, TCP protocol for SYN scan
+	-can be executed by default
+
+nmap -sU [IP/range] or nmap -sU -T5 [IP/range]
+	-port scan for UDP Protocol
+	-UDP scan is slow due to its connectionless nature
+	-use [-T5 timing option] to tweak it and make it faster
+	-firewall blocks T5 on internet address, use T2 when scanning internet IP addresses
+
+
+
+
+
+ 
+
 	
