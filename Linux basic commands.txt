@@ -65,7 +65,14 @@ nmap -sU [IP/range] or nmap -sU -T5 [IP/range]
 	-use [-T5 timing option] to tweak it and make it faster
 	-firewall blocks T5 on internet address, use T2 when scanning internet IP addresses
 
+nmap --top-ports [number of ports(1000 is the default)] -T5 [IP/range]
+	-used to scan range of ports you want to scan
 
+nmap -p [port number] -T5 [IP/range]
+	-used to scan the specified port or target port.
+
+nmap -p- -T5 [IP/range]
+	-used to include all target ports available/open. 
 
 
 
