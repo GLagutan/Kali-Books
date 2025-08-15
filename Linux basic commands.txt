@@ -74,8 +74,52 @@ nmap -p [port number] -T5 [IP/range]
 nmap -p- -T5 [IP/range]
 	-used to include all target ports available/open. 
 
-
-
- 
-
+nmap -p- -T5 -sV [IP/range]
+	[-sV Option]
+	-used to tell the version of the scan
+	s=scan, V=version
+	-usually called the "version scan"
+	nmap -p [port number1, port number2] -T5 -sV [IP/range]
+		-speed the scanning for version scan
 	
+	Nmap Version Intensity:
+	Highest=9, Default=7
+	--version-intensity (default value: 7)
+	--version-light (default value: 2)
+	--version-all (default value: 9[it will scan all versions])
+	
+	Syntax:
+	nmap -p [port number] -T5 -sV --version-intensity [IP/range]
+
+nmap -A -v -v [IP/range]
+	-gives a lot of information, even SO in some cases
+
+nmap -PU [IP/range]
+	-explains every IP Address
+
+nmap -sV -O -T5 [IP/range]
+	-displays the OS versions of devices in the network
+
+NSE Script
+
+A.
+location: /usr/share/nmap/scripts/
+-script [NSE script name]
+	-NSE script option for nmap scanning
+	Syntax: nmap -p [port number] --script [NSE script_name] [IP/range]
+	
+	Note: Add -sV option (version scan) for more detail/information
+B.
+-sC (sript scan)
+	Syntax: nmap -sV -sC [IP/range]
+	-doesn't need a port number to run a scan
+	-target multiple port numbers (all TCP open ports)
+	-has a low number of false positives (false positive means a false vulnerability)
+	-less intrusive on the target system
+	Note:
+	     Some categories could bring your target down like the DOS category.
+
+
+
+
+
