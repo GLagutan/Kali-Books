@@ -119,6 +119,31 @@ B.
 	Note:
 	     Some categories could bring your target down like the DOS category.
 
+C.
+-A 
+     -execute the default script scan
+    Option will be use:
+	-Version scan
+	-Syn TCP scan
+	-Default NSE script scan
+	-Operating System scan
+	-Network traceroute
+	
+	Syntax: nmap -A [IP/range]
+
+* (wildcard)
+	-another way yo target multiple scripts in the same category
+	
+	Syntax: nmap -sV -p [port number] --script smb-vuln* [IP/range]
+
+
+
+
+
+
+
+
+
 
 
 
