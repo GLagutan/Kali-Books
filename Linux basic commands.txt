@@ -136,6 +136,32 @@ C.
 	
 	Syntax: nmap -sV -p [port number] --script smb-vuln* [IP/range]
 
+====== How to know the SMTP Address of the email Web ======
+
+Steps:
+1. nslookup
+2. set type=mx
+3. [Domain]
+
+Other way:
+nslookup -type=mx [Domain]
+
+Note: Find the domain that has the smtp word in it 
+e.g;  gmail-smtp-in.l.google.com
+
+Next Step:
+nslookup [paste the domain]
+ex: nslookup gmail-smtp-in.l.google.com
+
+===END===
+
+
+
+
+
+
+
+
 
 
 
