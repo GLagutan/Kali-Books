@@ -102,14 +102,14 @@ nmap -sV -O -T5 [IP/range]
 
 NSE Script
 
-A.
+A:
 location: /usr/share/nmap/scripts/
 -script [NSE script name]
 	-NSE script option for nmap scanning
 	Syntax: nmap -p [port number] --script [NSE script_name] [IP/range]
 	
 	Note: Add -sV option (version scan) for more detail/information
-B.
+B:
 -sC (sript scan)
 	Syntax: nmap -sV -sC [IP/range]
 	-doesn't need a port number to run a scan
@@ -119,7 +119,7 @@ B.
 	Note:
 	     Some categories could bring your target down like the DOS category.
 
-C.
+C:
 -A 
      -execute the default script scan
     Option will be use:
